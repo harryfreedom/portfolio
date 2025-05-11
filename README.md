@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Harry Freedom's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive personal portfolio website showcasing my skills, experience, and projects.
 
-## Available Scripts
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- **Responsive Design** - Optimized for all device sizes from mobile to desktop
+- **Dark/Light Mode** - Toggle between dark and light themes based on your preference
+- **Smooth Scrolling** - Navigate seamlessly between different sections
+- **Interactive UI** - Modern UI with hover effects and transitions
+- **Section Highlighting** - Active navigation section is highlighted as you scroll
+- **Mobile-Friendly Navigation** - Collapsible menu for mobile devices
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📋 Sections
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Hero** - Introduction and quick overview
+- **About** - Personal biography and background
+- **Skills** - Technical and soft skills visualization
+- **Experience** - Professional work history timeline
+- **Education** - Academic background and certifications
+- **Projects** - Showcase of personal and professional projects
 
-### `npm test`
+## 🛠️ Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React.js** - Frontend framework
+- **Tailwind CSS** - Utility-first CSS framework for styling
+- **React Hooks** - For state management and component lifecycle
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Styling
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This portfolio uses Tailwind CSS for styling
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📱 Responsive Design
 
-### `npm run eject`
+The portfolio is fully responsive with breakpoints for:
+- Mobile devices (< 768px)
+- Tablets (768px - 1024px)
+- Desktops (> 1024px)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The navigation menu automatically collapses into a hamburger menu on mobile devices.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📬 Contact
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Feel free to reach out if you have any questions or feedback!
 
-## Learn More
+- **Email**: harry.freedom@example.com
+- **LinkedIn**: [Harry Freedom](https://linkedin.com/in/harryfreedom)
+- **GitHub**: [harryfreedom](https://github.com/harryfreedom)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with ❤️ by Harry Freedom
