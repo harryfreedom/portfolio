@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 export default function Navbar({ activeSection, darkMode }) {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +25,12 @@ export default function Navbar({ activeSection, darkMode }) {
         behavior: 'smooth'
       });
     }
+    // Close mobile menu after clicking a link
+    setIsMobileMenuOpen(false);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   const navItems = [
@@ -38,7 +45,7 @@ export default function Navbar({ activeSection, darkMode }) {
   return (
     <nav className={`w-full ${isScrolled 
       ? `${darkMode ? 'bg-gray-900 bg-opacity-90' : 'bg-white bg-opacity-90'} shadow-md` 
-      : 'bg-transparent'} backdrop-blur-sm transition-all duration-300 py-4 px-6`}
+      : 'bg-transparent'} backdrop-blur-sm transition-all duration-300 py-4 px-6 relative`}
     >
       <div className="container mx-auto flex justify-between items-center">
         <div className="font-bold text-xl">
@@ -63,11 +70,35 @@ export default function Navbar({ activeSection, darkMode }) {
 
         <div className="md:hidden">
           {/* Mobile menu button */}
-          <button className={`${darkMode ? 'text-white' : 'text-gray-800'}`}>
-            ≡
+          <button 
+            onClick={toggleMobileMenu}
+            className={`${darkMode ? 'text-white' : 'text-gray-800'} text-2xl focus:outline-none`}
+          >
+            {isMobileMenuOpen ? '×' : '≡'}
           </button>
         </div>
       </div>
+
+      {/* Mobile menu dropdown */}
+      {isMobileMenuOpen && (
+        <div className={`md:hidden absolute left-0 right-0 top-full ${
+          darkMode ? 'bg-gray-900 bg-opacity-95' : 'bg-white bg-opacity-95'
+        } shadow-lg py-4 px-6 flex flex-col space-y-4 backdrop-blur-sm z-10`}>
+          {navItems.map(item => (
+            <button
+              key={item.id}
+              onClick={() => scrollToSection(item.id)}
+              className={`text-left ${
+                activeSection === item.id
+                  ? `${darkMode ? 'text-blue-400' : 'text-blue-600'} font-medium`
+                  : `${darkMode ? 'text-gray-300 hover:text-blue-400' : 'text-gray-700 hover:text-blue-600'}`
+              } transition-colors duration-300 py-2`}
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
+      )}
     </nav>
   );
 }
