@@ -46,7 +46,7 @@ The navigation menu automatically collapses into a hamburger menu on mobile devi
 
 Feel free to reach out if you have any questions or feedback!
 
-- **Email**: harry.freedom@example.com
+- **Email**: harryfreedomvadlamudi@gmail.com
 - **LinkedIn**: [Harry Freedom](https://linkedin.com/in/harryfreedom)
 - **GitHub**: [harryfreedom](https://github.com/harryfreedom)
 
