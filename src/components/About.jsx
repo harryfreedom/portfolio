@@ -88,7 +88,7 @@ export default function About({ darkMode }) {
               {/* Resume Button with Download Icon */}
               <div className="relative">
                 <a
-                  href="/resume.pdf"
+                  href="https://harryfreedom.github.io/portfolio/resume.pdf"
                   download
                   className={`${
                     darkMode 
